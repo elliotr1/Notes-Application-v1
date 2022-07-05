@@ -1,0 +1,173 @@
+body{
+    background-color: #e3fff5;
+    text-align: center;
+    --bg--colour: white;
+    --default--border:  1px solid black;
+    display: inline-block;
+}
+
+textarea{
+    resize: none;
+    height: 50px;
+    width: 210px;
+}
+textarea::placeholder{
+    text-align: center;
+}
+
+.notesContainer{
+    background-color: var(--bg--colour);
+    margin-top: 120px;
+    position: absolute;
+    margin-left: 40%;
+    width: 400px;
+    height: 450px;
+    border: var(--default--border);
+    user-select: none;
+    border-radius: 5%;
+}
+
+#newNotes > h1{
+    font-family: 'Playfair Display', serif;
+    text-decoration: underline 4px black solid;
+    margin-right: 30px;
+}
+
+input{
+    width: 200px;
+    height: 20px;;
+}
+
+
+.notesContainer > textarea:focus, input:focus{
+    outline: none;
+}
+
+.notesContainer > input, textarea{
+    background-color: #f1f1f1;
+    border: 1px solid black;
+    font-size: 17px;
+}
+
+.notesContainer >textarea::placeholder, input::placeholder{
+    text-align: center;
+}
+
+.buttonSubmit > button{
+    margin-top: 20px;
+    width: 250px;
+    height: 70px;
+    background-color: white;
+    border: var(--default--border);
+    border-radius: 25px;
+    font-size: 20px;
+    transition: 1.2s;
+}
+
+.buttonSubmit > button:hover{
+    background-color: #faf4f4;
+    transition-duration: 1.2s;
+    transform: scale(105%);
+}
+
+.star{
+    color: red;
+}
+
+.title{
+    font-size: 20px;
+    font-weight: bold;
+    padding-bottom: 15px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+
+}
+
+.content-block{
+    display: inline-block;
+}
+
+.newNotes{
+    display: inline-block;
+}
+
+.forward-arrow-button{
+    right: 0;
+    margin-right: 3px;
+
+}
+
+.backwards-arrow-button{
+    left: 0;
+    margin-left: 3px;
+}
+
+.forward-arrow-button, .backwards-arrow-button{
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    font-size: 20px;
+    padding: 10px;
+    z-index: 2;
+    top: 45%;
+    position: absolute;
+}
+
+.forward-arrow-button:hover, .backwards-arrow-button:hover{
+    background-color: #f1f1f1;
+}
+
+.select{
+    width: 120px;
+    text-align: center;
+    background-color: #e2f5ff;
+    margin-top: 20px;
+}
+.select:focus{
+    outline: none;
+}
+
+.notesContents{
+    overflow-wrap: break-word;
+    font-size: 18px;
+    width: 300px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 10px;
+    height: 250px
+}
+
+.pageNum{
+    margin-top: 4px;
+    font-weight: bold;
+    color: dimgray;
+}
+
+.logo{
+    width: 35px;
+    height: 40px;
+    margin-bottom: 0;
+}
+
+.flex-icons{
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.editNotes{
+    display: none;
+}
+.editNotes > input, textarea{
+    margin-bottom: 20px;
+}
+
+.noteBlock{
+    display: inline-block;
+}
+
+.iconButton{
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
